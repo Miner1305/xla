@@ -41,6 +41,14 @@ if (WITH_RANDOMX)
         src/crypto/rx/RxDataset.cpp
         src/crypto/rx/RxQueue.cpp
         src/crypto/rx/RxVm.cpp
+        		
+		### Removed useless includes		
+		src/crypto/randomx/panthera/sha256.c
+		src/crypto/randomx/panthera/KangarooTwelve.c
+		src/crypto/randomx/panthera/KeccakP-1600-reference.c
+		src/crypto/randomx/panthera/KeccakSpongeWidth1600.c
+		src/crypto/randomx/defyx/yescrypt-best.c
+		src/crypto/randomx/panthera/yespower-opt.c
     )
 
     if (CMAKE_C_COMPILER_ID MATCHES MSVC)
